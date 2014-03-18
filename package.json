@@ -1,0 +1,44 @@
+{
+  "name": "string_tmpl.jsx",
+  "version": "0.1.0",
+  "description": "Super EASY String template for JSX, Template.format(\"{test1} = {test2}\", {\"test1\" : \"abc\", \"test2\" : 123});",
+  "main": "string_tmpl.js",
+  "scripts": {
+    "test": "tape test/*",
+    "build": "npm run postinstall && browserify -r ./string_tmpl.js:string_tmpl -o client/string_tmpl.js",
+    "postinstall": "jsx lib/string_tmpl.jsx | jsx-linker -t commonjs-lib --stdin -o string_tmpl.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yosuke-furukawa/string_tmpl.jsx"
+  },
+  "keywords": [
+    "string",
+    "template",
+    "jsx"
+  ],
+  "author": "yosuke-furukawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosuke-furukawa/string_tmpl.jsx/issues"
+  },
+  "devDependencies": {
+    "jsx-linker": "~0.1.5",
+    "tape": "~2.10.2",
+    "jsx": "~0.9.83",
+    "browserify": "~3.32.1"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  }
+}

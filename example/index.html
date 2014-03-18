@@ -1,0 +1,8 @@
+<script src="client/string_tmpl.js"></script>
+<h1 id="test"></h1>
+<script>
+    var Template = require("string_tmpl").Template;
+    var test = Template.format("{test} yosuke", { test: "Hello"});
+    document.getElementById("test").innerHTML = test;
+
+</script>

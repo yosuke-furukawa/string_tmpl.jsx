@@ -1,0 +1,10 @@
+{
+  "name": "string_tmpl.jsx",
+  "version": "0.1.0",
+  "main": "client/string_tmpl.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ]
+}
