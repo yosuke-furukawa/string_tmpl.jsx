@@ -1,5 +1,5 @@
 {
-  "name": "string_tmpl.jsx",
+  "name": "string_tmpl",
   "version": "0.1.0",
   "main": "client/string_tmpl.js",
   "ignore": [

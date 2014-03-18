@@ -1,5 +1,5 @@
 {
-  "name": "string_tmpl.jsx",
+  "name": "string_tmpl",
   "version": "0.1.0",
   "description": "Super EASY String template for JSX, Template.format(\"{test1} = {test2}\", {\"test1\" : \"abc\", \"test2\" : 123});",
   "main": "string_tmpl.js",
