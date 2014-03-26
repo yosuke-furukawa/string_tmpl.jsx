@@ -6,7 +6,8 @@
   "scripts": {
     "test": "tape test/*",
     "build": "npm run postinstall && browserify -r ./string_tmpl.js:string_tmpl -o client/string_tmpl.js",
-    "compile": "jsx lib/string_tmpl.jsx | jsx-linker -t commonjs-lib --stdin -o string_tmpl.js"
+    "compile": "jsx lib/string_tmpl.jsx | jsx-linker -t commonjs-lib --stdin -o string_tmpl.js",
+    "test-zuul": "SAUCE_USERNAME=string_tmpl SAUCE_ACCESS_KEY=227570df-89f6-4cd6-93a0-a13e01e8cf6b zuul -- test/*.js"
   },
   "repository": {
     "type": "git",
@@ -40,5 +41,6 @@
       "ipad/6",
       "android-browser/latest"
     ]
-  }
+  },
+  "dependencies": {}
 }

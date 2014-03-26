@@ -1,0 +1,11 @@
+name: string_tmpl_example
+ui: tape
+browsers:
+  - name: chrome
+    version: 27..latest
+  - name: firefox
+    version: latest
+  - name: safari
+    version: latest
+  - name: ie
+    version: 6..latest
