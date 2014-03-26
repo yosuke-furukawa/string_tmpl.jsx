@@ -1,12 +1,12 @@
 {
   "name": "string_tmpl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Super EASY String template for JSX, Template.format(\"{test1} = {test2}\", {\"test1\" : \"abc\", \"test2\" : 123});",
   "main": "string_tmpl.js",
   "scripts": {
     "test": "tape test/*",
     "build": "npm run postinstall && browserify -r ./string_tmpl.js:string_tmpl -o client/string_tmpl.js",
-    "postinstall": "jsx lib/string_tmpl.jsx | jsx-linker -t commonjs-lib --stdin -o string_tmpl.js"
+    "compile": "jsx lib/string_tmpl.jsx | jsx-linker -t commonjs-lib --stdin -o string_tmpl.js"
   },
   "repository": {
     "type": "git",
